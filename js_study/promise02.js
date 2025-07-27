@@ -16,23 +16,23 @@ function getData() {
 }
 
 const promise = getData();
-// promise.then().then().then()....
-// promise chaining을 사용하게 되면 여러가지 비동기 작업을
-// 연속적으로 수행할 수 있다.
-// promise
-//   .then((data) => {
-//     console.log(data);
-//     return getData();
-//   })
-//   .then((data) => {
-//     console.log(data);
-//   });
+  // promise.then().then().then()....
+  // promise chaining을 사용하게 되면 여러가지 비동기 작업을
+  // 연속적으로 수행할 수 있다.
+  promise
+    .then((data) => {
+      console.log(data);
+      return getData();
+    })
+    .then((data) => {
+      console.log(data);
+    });
 
-// promise
-//   .then((data) => getData())
-//   .then((data) => getData())
-//   .then((data) => getData())
-//   .then((data) => console.log(data));
+  promise
+    .then((data) => getData())
+    .then((data) => getData())
+    .then((data) => getData())
+    .then((data) => console.log(data));
 
 promise
   .then((data) => {

@@ -1,15 +1,15 @@
 //변수 선언 => let, const
 //let은 값을 재할당할 수 있는 변수를 선언할 때 사용
-let name = "이동윤";
+let name = "JINHYUN";
 console.log(name);
-name = "삼동윤";
+name = "JNIHYUN2";
 console.log(name);
 
 //const는 한 번 할당하면 값을 변경할 수 없는 상수를 선언할 때 사용
 const age = 27;
 console.log(age);
-// age = 28;
-// console.log(age);
+age = 28;
+console.log(age);
 
 //연산자
 // ==(동등연산자) : 값만 비교, 필요한 경우 알아서 암시적 타입 변환
@@ -42,15 +42,15 @@ console.log("".length > 0);
 console.log(!!"" === false);
 
 let data = {
-  name: "이동윤",
-  age: 27,
+  name: "JINI",
+  age: 29,
 };
 
 if (!data) {
   console.log("사용자 정보가 없습니다.");
-} else if (data.name === "삼동윤") {
+} else if (data.name === "JINI2") {
   console.log("사용자 이름이 일치합니다.");
-} else if (data.age === 27) {
+} else if (data.age === 29) {
   console.log("사용자의 이름은 일치하지 않지만 나이는 일치합니다.");
 } else {
   console.log("사용자가 일치하지 않습니다.");
